@@ -85,6 +85,15 @@
 \renewcommand{\texttt}[1]{%
     \mbox{\textcolor{black!18!red}{\ttfamily#1}}%
 }
-\provideenvironment{Shaded}{}{}
-\renewenvironment{Shaded}{\begingroup\footnotesize\begin{tcolorbox}[colback=white!96!black,colframe=black!40!white,boxrule=0.6pt,arc=2.5pt,top=4pt,bottom=4pt,left=4pt,right=4pt]}{\end{tcolorbox}\endgroup}
+% \provideenvironment{Shaded}{}{}
+% \renewenvironment{Shaded}{\begingroup\footnotesize\begin{tcolorbox}[colback=white!96!black,colframe=black!40!white,boxrule=0.6pt,arc=2.5pt,top=4pt,bottom=4pt,left=4pt,right=4pt]}{\end{tcolorbox}\endgroup}
 \makeatother
+\usepackage{listings}
+\usepackage{xcolor}
+\definecolor{light-gray}{gray}{0.95}
+\lstset{
+    backgroundcolor=\color{light-gray},
+    basicstyle=\ttfamily,
+    breaklines=true,
+    columns=fullflexible
+}
